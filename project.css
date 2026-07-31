@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Rubik+Glitch&family=Trade+Winds&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url(9b94f0e78f15998b78a90f3a7b711fa8-photoaidcom-flip.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 3.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bolder;
+    padding-right: 25rem;
+    margin-left: 2rem;
+    font-family: 'Trade Winds', cursive;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 1.7rem;
+    margin-right: 2rem;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: orange solid;
+    margin-top: 20px;
+}
+
+h1 {
+    display: flex;
+    font-size: 6rem;
+    width: 20ch;
+    font-weight: bolder;
+    margin-top: 18rem;
+    margin-left: 6rem;
+    color: white;
+    text-wrap: nowrap;
+    font-family: 'Griffy', cursive;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    height: 55px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    border: orange solid;
+}
+
+.btn:hover {
+    background: gray;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:active {
+    background: gray;
+    color: black;
+    transition: scale 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+
+.h21 {
+    margin-top: 20rem;
+}
+
+h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    background-color: black;
+    width: 25rem;
+    margin-left: 35rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    border-radius: 15px;
+    border: orange solid 5px;
+}
+
+.category {
+    background-image: url(mininu_13_anos.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.category h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+    width: 12rem;
+    margin-left: 41rem;
+    border: orange solid 5px;
+    border-radius: 15px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 3px solid orange;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:active {
+    transform: scale(1.03);
+    transition: scale 0.3s ease-in-out;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.cart-btn i {
+    margin-top: 13px;
+    margin-right: 5px;
+}
+
+.cart-btn:hover {
+    background-color: orange;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: orange;
+}
+
+.developer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.developer-card {
+    background-color: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.developer-card img {
+    max-width: 100%;
+    height: 125px;
+    border: orange solid;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.developer-card h5 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

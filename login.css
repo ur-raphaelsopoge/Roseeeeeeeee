@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 40px;
+}
+
+.container .name {
+    position: relative;
+}
+
+.container .name input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    color: rgb(18, 17, 17);
+    margin-bottom: 30px;
+}
+
+.container .pass input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    color: rgb(18, 17, 17);
+    margin-bottom: 20px;
+}
+
+.container .btn button {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(18, 17, 17);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container .btn button:hover {
+    background-color: #ddd;
+}
+
+
+
