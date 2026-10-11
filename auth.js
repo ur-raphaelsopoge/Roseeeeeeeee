@@ -1,7 +1,7 @@
 const USERS_KEY = 'monkey_users';
 const SESSION_KEY = 'monkey_session';
 const NOTICE_KEY = 'monkey_notice';
-const SHOP_PAGE = 'index.html';
+const SHOP_PAGE = './';
 
 const loginForm = document.getElementById('loginForm');
 const signupForm = document.getElementById('signupForm');
