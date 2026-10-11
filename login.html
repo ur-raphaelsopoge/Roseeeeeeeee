@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | MONKEY ✕ MONKEY</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="auth.css">
+  <script src="theme.js"></script>
 </head>
-<body>
-    <div class="container">
-        <h2>Login</h2>
-        <div class="name">
-            <label>Username</label>
-            <input type="text" placeholder="Username" required>
+<body class="auth-page">
+  <button type="button" class="icon-btn theme-toggle auth-theme" data-theme-toggle aria-label="Switch to dark mode">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="5"/>
+      <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </svg>
+  </button>
+
+  <main class="auth-card">
+    <a href="project.html" class="auth-brand">MONKEY ✕ MONKEY</a>
+    <h1>Welcome back</h1>
+    <p class="auth-sub">Login to continue shopping.</p>
+
+    <p class="form-message" id="formMessage" role="alert" hidden></p>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="username">Username or email</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+          <button type="button" class="toggle-password" aria-label="Show password">Show</button>
         </div>
-        <div class="pass">
-            <label>Password</label>
-            <input type="password" placeholder="Passsword" required>
-        </div>
-        <div class="btn">
-            <a href="project.html"><button>Login</button></a>
-            <a href="signup.html">Create Account</a>
-        </div>
-    </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+
+    <p class="auth-switch">No account yet? <a href="signup.html">Create one</a></p>
+  </main>
+
+  <script src="auth.js"></script>
 </body>
 </html>
